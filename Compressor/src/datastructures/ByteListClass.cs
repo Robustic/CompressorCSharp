@@ -143,7 +143,7 @@ namespace Compressor
                     int totalLength = this.pointer + bytesToCombine.Length;
                     if (totalLength > 1073741824)
                     {
-                        // throw new Exception("Too many bytes!");
+                        throw new Exception("Too many bytes!");
                     }
                     if (totalLength > this.bytes.Length)
                     {
@@ -177,7 +177,7 @@ namespace Compressor
                 {
                     if (i < 0 || i >= this.pointer)
                     {
-                        // throw new Exception("Index have to be inside list! Index " + i + " is outside list. List length is " + this.pointer + ".");
+                        throw new Exception("Index have to be inside list! Index " + i + " is outside list. List length is " + this.pointer + ".");
                     }
                     return this.bytes[i];
                 }
@@ -193,7 +193,7 @@ namespace Compressor
                 {
                     if (i < 0 || i >= this.pointer)
                     {
-                        // throw new Exception("Index have to be inside list! Index " + i + " is outside list. List length is " + this.pointer + ".");
+                        throw new Exception("Index have to be inside list! Index " + i + " is outside list. List length is " + this.pointer + ".");
                     }
                     this.bytes[i] = byteToSet;
                 }
@@ -233,7 +233,7 @@ namespace Compressor
                 {
                     if (this.pointer + count > 1073741824)
                     {
-                        // throw new Exception("Too many bytes!");
+                        throw new Exception("Too many bytes!");
                     }
                     this.combine(new byte[count]);
                 }
