@@ -1,0 +1,5 @@
+.vscode/
+Compressor/bin/
+Compressor/obj/
+CompressorTests/bin/
+CompressorTests/obj/
