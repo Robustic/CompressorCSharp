@@ -1,5 +1,5 @@
 ﻿using System;
-using Compressor.DataStructures.ByteList;
+using Compressor.DataStructures;
 
 namespace Compressor
 {
